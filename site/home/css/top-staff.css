@@ -1,0 +1,81 @@
+#wp-top-staff {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0 auto;
+    margin-top: 55px;
+    width: 960px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.top-staff-content>.top-staff-title {
+    font-weight: 700;
+    font-size: 28px;
+    color: #15397F;
+    text-transform: uppercase;
+    padding-left: 9px;
+    position: relative;
+}
+
+.top-staff-title::after {
+    content: "";
+    width: 5px;
+    height: 22px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: #a0c9eb;
+}
+
+
+.top-staff-content>.top-staff-subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #15397f;
+}
+
+.top-staff-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.top-staff-list {
+    width: 960px;
+    overflow: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+    cursor: grab;
+    overflow: scroll;
+}
+
+.top-staff-list ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.top-staff-list ul li {
+    flex: 0 0 calc((960px - 40px) / 3.5);
+    box-sizing: border-box;
+}
+
+.staff-item>.staff-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.staff-item>.staff-img {
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.staff-item>.staff-img:hover img {
+    transform: scale(1.05);
+}

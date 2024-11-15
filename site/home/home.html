@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./css/loyalty.css">
+    <link rel="stylesheet" href="./css/top-staff.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="header-container">
+                <div class="logo"><a href="/api/site/home"><img class="img-logo"
+                            src="/images/logo_30shine_new.7135aeb8.png" alt="Loading..."></a></div>
+                <div class="nav-bar-menu">
+                    <div class="link-item-1"><a href="/api/site/home">Trang chủ</a></div>
+                    <div class="link-item-2"><a href="/api/site/about-us">Về SmSa</a></div>
+                    <div class="link-item-3"><a href="/api/site/map">Tìm SmSa gần nhất</a></div>
+                    <div class="link-item-4"><a href="">Học cắt tóc</a></div>
+                    <div class="link-item-5"><a href="">Nhượng quyền</a></div>
+                    <div class="link-item-6"><a href="">Đối tác</a></div>
+                </div>
+                <div class="auth-menu">
+                    <div class="auth-item-1"><a href="/api/accounts/register">Đăng ký</a></div>
+                    <div class="auth-item-2"><a href="/api/accounts/login">Đăng nhập</a></div>
+                    <div class="auth-item-3"><a href="/api/accounts/logout">Đăng xuất</a></div>
+                    <div class="user-info" onclick="toggleDropdown()"><img src="/images/user-avatar-reloaded.png"
+                            alt="Loading" class="avt-user">
+                    </div>
+
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="/api/customer/detail/{{idPerson}}">Trang cá nhân</a>
+                        <a href="#">Thay đổi mật khẩu</a>
+                        <a href="#">Đặt lịch cắt tóc</a>
+                        <a href="/api/accounts/logout">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="wp-content">
+            <div id="wp-banner-slide">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://30shine.com/kperm-uon-dinh-hinh-nep-toc" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="/images/banner-1.jpg" alt="Slide 1">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://shinecombo.30shine.com/shincombophienban2" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="/images/banner-2.jpg" alt="Slide 2">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://shinecombo.30shine.com/shincombophienban2" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="/images/banner-3.png" alt="Slide 3">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://30shine.com/kperm-uon-dinh-hinh-nep-toc" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="/images/banner-4.jpeg" alt="Slide 4">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://30shine.com/kperm-uon-dinh-hinh-nep-toc" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="/images/banner-5.jpg" alt="Slide 5">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://30shine.com/kperm-uon-dinh-hinh-nep-toc" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="/images/banner-6.jpg" alt="Slide 6">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <div id="form-booking-home">
+                <div class="form-booking-content">
+                    <div class="form-booking-slogan">
+                        <div class="slogan-title">
+                            ĐẶT LỊCH GIỮ CHỖ CHỈ 30 GIÂY
+                        </div>
+                        <div class="slogan-text">
+                            Cắt xong trả tiền, hủy lịch không sao
+                        </div>
+                    </div>
+                    <div class="btn-booking">
+                        <a href="">ĐẶT LỊCH NGAY</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wp-service">
+                <div class="service-content">
+                    <div class="category-title">
+                        DỊCH VỤ TÓC
+                    </div>
+
+                    <div class="service-list">
+                        <ul>
+                            <li>
+                                <div class="service-item">
+                                    <div class="service-img">
+                                        <a href=""><img src="/images/uon-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="service-info">
+                                        <div class="service-label">
+                                            <a href="">Cắt tóc</a>
+                                        </div>
+                                        <div class="service-description">
+                                            <a href="">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item">
+                                    <div class="service-img">
+                                        <a href=""><img src="/images/uon-2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="service-info">
+                                        <div class="service-label">
+                                            <a href="">Uốn định hình</a>
+                                        </div>
+                                        <div class="service-description">
+                                            <a href="">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item">
+                                    <div class="service-img">
+                                        <a href=""><img src="/images/uon-3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="service-info">
+                                        <div class="service-label">
+                                            <a href="">Thay đổi màu tóc</a>
+                                        </div>
+                                        <div class="service-description">
+                                            <a href="">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-content">
+                    <div class="category-title">
+                        SPA & RELAX
+                    </div>
+
+                    <div class="service-list">
+                        <ul>
+                            <li>
+                                <div class="service-item">
+                                    <div class="service-img">
+                                        <a href=""><img src="/images/pc_home_spa_1.png" alt=""></a>
+                                    </div>
+                                    <div class="service-info">
+                                        <div class="service-label">
+                                            <a href="">Gội Massage Relax</a>
+                                        </div>
+                                        <div class="service-description">
+                                            <a href="">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item">
+                                    <div class="service-img">
+                                        <a href=""><img src="/images/pc_home_spa_3.png" alt=""></a>
+                                    </div>
+                                    <div class="service-info">
+                                        <div class="service-label">
+                                            <a href="">Lấy ráy tai êm</a>
+                                        </div>
+                                        <div class="service-description">
+                                            <a href="">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="wp-loyalty">
+                    <div class="loyalty-content">
+                        <div class="loyalty-title">
+                            LOYAL MEMBER
+                        </div>
+                        <div class="loyalty-subtitle">
+                            Khi tham gia chương trình thành viên, anh được hưởng những ưu đãi đặc biệt và nhiều quyền
+                            lợi vượt trội trong quá trình sử dụng dịch vụ
+                        </div>
+                        <div class="loyalty-img">
+                            <img src="/images/shine-member-20241022.jpg" alt="Loading...">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="wp-top-staff">
+                    <div class="top-staff-content">
+                        <div class="top-staff-title">
+                            TOP THỢ CẮT TÓC TRONG THÁNG
+                        </div>
+                        <div class="top-staff-subtitle">
+                            Đội ngũ Stylist giàu kinh nghiệm
+                        </div>
+                        <div class="top-staff-list">
+                            <ul>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff7.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff8.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff9.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="staff-item">
+                                        <div class="staff-img">
+                                            <img src="/images/staff-images/staff10.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footer-container">
+                <div class="footer-links-1">
+                    <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Học cắt tóc</a></li>
+                        <li><a href="#">Tìm SmSa gần nhất</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-2">
+                    <ul>
+                        <li><a href="#">Hotline (1000đ/phút): 1900.27.27.03</a></li>
+                        <li><a href="#">Liên hệ học nghề tóc: 0967.86.3030</a></li>
+                        <li><a href="#">Liên hệ nhượng quyền</a></li>
+                        <li><a href="#">Liên hệ quảng cáo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-3">
+                    <ul>
+                        <li><a href="#">Giờ phục vụ: Thứ 2 đến Chủ Nhật, 7h00 - 17h00</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều kiện giao dịch chung</a></li>
+                        <li><a href="#">Giấy phép giáo dục nghề nghiệp</a></li>
+                    </ul>
+                </div>
+
+                <div class="application-download">
+                    <p>Tải ứng dụng SmSa</p>
+
+                    <div>
+                        <div>
+                            <a href="#"><img src="/images/footer_apple.png" alt="Loading..." class="btn-app-store"></a>
+                            <a href="#"><img src="/images/footer_googleplay.png" alt="Loading..."
+                                    class="btn-gg-play"></a>
+                        </div>
+                        <img src="/images/download-app-qr.png" alt="Loading..." class="qr-code">
+                    </div>
+                </div>
+
+                <div class="info-social-media">
+                    <p>Tham gia cộng đồng 2,5 triệu thành viên</p>
+
+                    <div>
+                        <div class="tiktok">
+                            <a href="#">
+                                <img src="/images/tiktok-icon.png" alt="Loading...">
+                                <div>600k follow</div>
+                            </a>
+                        </div>
+                        <div class="youtube">
+                            <a href="#">
+                                <img src="/images/youtube-icon.png" alt="Loading...">
+                                <div>1300k follow</div>
+                            </a>
+                        </div>
+                        <div class="facebook">
+                            <a href="#">
+                                <img src="/images/facebook-icon.png" alt="Loading...">
+                                <div>200k follow</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><img src="/images/footer_congthuongicon.png" alt="Loading..."
+                                style="width: 68px; height: 28px;"></a>
+                        <a href="#"><img src="/images/footer_dmca.png" alt="Loading..."
+                                style="width: 48px; height: 28px;"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                © 2015 Công Ty Cổ Phần TMDV 30Shine / Địa chỉ: 82 Trần Đại Nghĩa, P. Đồng Tâm, Q. Hai Bà Trưng, HN/
+                GPĐKKD số
+                010.7467.693 do Sở KHĐT TP.HN cấp ngày 08/06/2016.
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./script/banner.js"></script>
+<script src="./script/list-staff.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</html>

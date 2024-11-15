@@ -1,0 +1,92 @@
+.category-title {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #15397F;
+    text-transform: uppercase;
+    padding-left: 9px;
+    position: relative;
+}
+
+.category-title::after {
+    content: "";
+    width: 5px;
+    height: 22px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: #a0c9eb;
+}
+
+#wp-service {
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#wp-service>.service-content {
+    margin-bottom: 55px;
+}
+
+.service-list {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.service-list>ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-list>ul>li {
+    flex-basis: 33.33%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.service-list>ul>li>.service-item {
+    border-radius: 15px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.service-item>.service-img img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.service-item>.service-img {
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.service-item>.service-img:hover img {
+    transform: scale(1.1);
+}
+
+.service-item>.service-info {
+    margin-left: 15px;
+}
+
+.service-item>.service-info {
+    font-family: "Segoe UI", sans-serif;
+    color: #15397F;
+    position: absolute;
+    bottom: 5px;
+}
+
+.service-item>.service-info a {
+    text-decoration: none;
+}
+
+.service-item>.service-info>.service-label {
+    font-size: 26px;
+    font-weight: 700;
+}
